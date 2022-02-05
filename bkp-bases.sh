@@ -64,6 +64,8 @@ else
 fi
 
 # Comentar algum procedimento na cron
+# Exemplo para uma linha que contenha "php"
+# Adiciona um "#" no comeco da linha
 #sed -i '/php/s/^/#/g' /etc/crontab
 
 # -- SCRIPT ---
@@ -186,6 +188,8 @@ if [ $(ssh  $SDESTINO "ls ${RBACKUP}" |grep -i $HOST |wc -l) = 0 ]; then
 fi
 
 # Descomenta na cron alguma linha que foi comentada para a realizacao do backup
+# Exemplo para uma linha que contenha "php"
+# Remove um "#" no comeco da linha
 #sed -i '/php/s/^#//g' /etc/crontab
 
 
