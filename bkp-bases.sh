@@ -158,7 +158,7 @@ done
 # Backup de usuarios do Postgresql
 
 su - postgres -c "pg_dumpall --globals-only -S postgres > $PBACKUP/$DATA/postgres/usuarios.sql"
-#su - postgres -c "pg_dumpall -U postgres --roles-only -f $PBACKUP/$DATA/postgres/roles.sql"
+
 
 DAYOFWEEK=$(date +"%u")
 if [ "${DAYOFWEEK}" -eq 7  ];  then
